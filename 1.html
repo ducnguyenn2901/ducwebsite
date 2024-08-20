@@ -1,0 +1,1349 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, initial-scale=1.0, user-scalable=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css
+    " />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="./1.css" />
+    <title>AppleShop</title>
+    <link rel="shortcut icon"
+        href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABO0lEQVR4Ae3WgUdDURTH8WcLIRFAVUoKAjVQEVMogYBCESIqTIQIQR4CgQwM+hsiUjxUMkQUkSEShTyYWL++eMgU3HN7g+EDDny57nECSQ315yAMQxc9KGC8fpZGwDweIaymHbAC/TCSZsAQYihxjkyaAQdQIsYogjQDriCUkUPwXwFtyGESAwgSc8gji17MYBbDvgJasIMKlKjiDMsYxCIu8AklarjEtCWgHSeQQQ3rrgElyIPQJWAC8mDP9QmOIKMysq4BN5DRluUXPENGU5aAV8gobwl4gow2LAERZBRZAoqQBwXXgAXIgy/sugR04AXyoOq6ig8hD95dA/rxARmV3AKAbcjgDX2WgAxOIUdLPi6iTtxBdWLcowL9Yt/nSdaFYzwgwia6kUUrxlDELa6xZjrJ0tIMaAZ8A6GRaKMmbbcuAAAAAElFTkSuQmCC"
+        type="image/x-icon">
+</head>
+
+<body onload="btnClick()">
+    <div class="position-sticky top-0 left-0 z-3" style="display: flex; justify-content: center; background-color: #515154; ">
+        <div class="header">
+            <div class="logo">
+                <img src="./image/0000242_Logos Desktop.png" alt="" />
+            </div>
+            <div class="menu">
+                <a href="#iphone">iPhone</a>
+                <a href="#ipad">iPad</a>
+                <a href="#mac">Mac</a>
+                <a href="#watch">Watch</a>
+                <a href="#listen">Sounds</a>
+                <a href="#phukien">Accessories</a>
+                <a href="./admin_login.html">Staff</a>
+                <a href="https://shopdunk.com/tra-gop">News</a>
+                <a href="https://shopdunk.com/khuyen-mai">Discount</a>
+            </div>
+            <div class="icon">
+                <a href=""><i class="fa-solid fa-magnifying-glass glasses"></i></a>
+                <a href=""><i class="fa-solid fa-bag-shopping bags"></i></a>
+                <a href=""><i class="fa-solid fa-user-large users"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="links">
+        <a href="./index.html">Home</a>
+        <p style="margin-left: 8px;"> > </p>
+        <a href="./index.html" style="margin-left: 8px;">iPhone</a>
+        <p style="margin-left: 8px;"> > </p>
+        <p style="margin-left: 8px;">iPhone 14 Pro Max series</p>
+    </div>
+    <div style="display: flex; justify-content: center;">
+        <div class="product">
+            <div>
+                <div class="slider-for">
+                    <div class="image-item"><img src="./products-image/0008056_space-black_550.webp" alt=""></div>
+                    <div class="image-item"><img src="./products-image/0008057_space-black_550.webp" alt=""></div>
+                    <div class="image-item"><img src="./products-image/0008058_space-black_550.webp" alt=""></div>
+                    <div class="image-item"><img src="./products-image/0008059_space-black_550.webp" alt=""></div>
+                    <div class="image-item"><img src="./products-image/0008060_space-black_550.webp" alt=""></div>
+                    <div class="image-item"><img src="./products-image/0008061_space-black_550.webp" alt=""></div>
+                    <div class="image-item"><img src="./products-image/0008062_space-black_550.webp" alt=""></div>
+                    <div class="image-item"><img src="./products-image/0008063_space-black_550.webp" alt=""></div>
+                    <div class="image-item"><img src="./products-image/0008064_space-black_550.webp" alt=""></div>
+                    <div class="image-item"><img src="./products-image/0008065_space-black_550.webp" alt=""></div>
+                </div>
+                <div class="slider-nav">
+                    <div class="myImage"><img src="./products-image/0008056_space-black_550.webp" alt=""></div>
+                    <div class="myImage"><img src="./products-image/0008057_space-black_550.webp" alt=""></div>
+                    <div class="myImage"><img src="./products-image/0008058_space-black_550.webp" alt=""></div>
+                    <div class="myImage"><img src="./products-image/0008059_space-black_550.webp" alt=""></div>
+                    <div class="myImage"><img src="./products-image/0008060_space-black_550.webp" alt=""></div>
+                    <div class="myImage"><img src="./products-image/0008061_space-black_550.webp" alt=""></div>
+                    <div class="myImage"><img src="./products-image/0008062_space-black_550.webp" alt=""></div>
+                    <div class="myImage"><img src="./products-image/0008063_space-black_550.webp" alt=""></div>
+                    <div class="myImage"><img src="./products-image/0008064_space-black_550.webp" alt=""></div>
+                    <div class="myImage"><img src="./products-image/0008065_space-black_550.webp" alt=""></div>
+                </div>
+            </div>
+            <div class="detail" style="margin-left: 40px; margin-top: 16px;">
+                <div class="name-product">
+                    <div class="name" style="height:36px ;width: 570px;">
+                        <h4 id="ten"></h4>
+                    </div>
+                    <div class="review">
+                        <div class="rating">
+                            <span class="fa fa-star" style="color: gold;"></span>
+                            <span class="fa fa-star" style="color: gold;"></span>
+                            <span class="fa fa-star" style="color: gold;"></span>
+                            <span class="fa fa-star" style="color: gold;"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <div class="danh-gia" style="margin-left: 10px;">
+                            <a href="#cmt" style="text-decoration: none;">10 review(s)</a>
+                            <span style="color: #0066CC;">|</span>
+                            <a href="" style="text-decoration: none;">+ compare</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="price">
+                    <span id="gia-ban"></span>
+                    <span id="gia-goc"></span>
+                </div>
+                <p style="margin-top: 20px; font-size: 13px;">storage</p>
+                <div class="storage">
+                    <input type="button" value="128GB" id="myButton1" onclick="price_1()">
+                    <input type="button" value="256GB" id="myButton2" onclick="price_2()" style="margin-left: 10px;">
+                    <input type="button" value="512GB" id="myButton3" onclick="price_3()" style="margin-left: 10px;">
+                    <input type="button" value="1TB" id="myButton4" onclick="price_4()" style="margin-left: 10px;">
+                </div>
+                <p style="margin-top: 17px; font-size: 13px;">Color</p>
+                <span class="circle" style="margin-top: 10px;">
+                    <span id="myColor1"
+                        style="border: thin solid white; border-radius: 50%; padding: 3px; width: 35.6px; height: 35.6px;"><input
+                            type="button" id="chooseColor" onclick="color1()"
+                            style="width: 28px; height: 28px; background-color: #4C4B49; border-radius: 50%;"></span>
+                    <span id="myColor2"
+                        style="border: thin solid white; border-radius: 50%; padding: 3px; width: 35.6px; height: 35.6px;  margin-left: 10px;"><input
+                            type="button" onclick="color2()"
+                            style="width: 28px; height: 28px; background-color: #E3E5E3; border-radius: 50%;"></span>
+                    <span id="myColor3"
+                        style="border: thin solid white; border-radius: 50%; padding: 3px; width: 35.6px; height: 35.6px;  margin-left: 10px;"><input
+                            type="button" onclick="color3()"
+                            style="width: 28px; height: 28px; background-color: #FCEBD3; border-radius: 50%; "></span>
+                    <span id="myColor4"
+                        style="border: thin solid white; border-radius: 50%; padding: 3px; width: 35.6px; height: 35.6px;  margin-left: 10px;"><input
+                            type="button" onclick="color4()"
+                            style="width: 28px; height: 28px; background-color: #61586B; border-radius: 50%; "></span>
+                </span>
+                <div class="buy">
+                    <div class="khuyenmai">
+                        <div class="sale-tittle" style="margin-top: 14px;  display: flex; margin-left: 20px;">
+                            <i class="fa-solid fa-gift" style="font-size: 18px;"></i>
+                            <p style="margin-left: 10px; font-weight: 800; font-size: 13px;">Promotional information</p>
+                        </div>
+                        <div class="sale">
+                            <ul>
+                                <li>
+                                    <input type="radio" id="sale1" onclick="discount1()">
+                                    <label for="sale1">Instant payment</label>
+                                </li>
+                                <li style="margin-top: 20px;">
+                                    <input type="radio" id="sale2" onclick="discount2()">
+                                    <label for="sale2">Installment 0%</label>
+                                </li>
+                                <li style="margin-top: 20px;">
+                                    <input type="radio" id="sale3" onclick="discount3()">
+                                    <label for="sale3">Preferential price with diamond warranty, VIP warranty</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="uudai">
+                        <div class="uudai-tittle" style="margin-top: 14px;  display: flex; margin-left: 20px;">
+                            <i class="fa-solid fa-gift" style="font-size: 18px;"></i>
+                            <p style="margin-left: 10px; font-weight: 800; font-size: 13px;">Extra offer</p>
+                        </div>
+                        <div class="sale-uu">
+
+                            <ul>
+                                <li>
+                                    <p style="color: #E03E2D; font-weight: 800;">Payment Offer </p>
+                                </li>
+                                <li style="margin-top: 15px;">
+                                    <p>●  5% discount up to 500,000 VND via Kredivo (Limited quantity)<a href=""
+                                            style="text-decoration: none;">(chi tiết)</a> </p>
+                                </li>
+                                <li>
+                                    <p style="color: #E03E2D; font-weight: 800;">Combo Offer <a href=""
+                                            style="text-decoration: none;">(detail)</a></p>
+                                </li>
+                                <p>
+                                    <a style="text-decoration: none;font-weight: 600;" data-bs-toggle="collapse"
+                                        href="#collapseExample" role="button" aria-expanded="false"
+                                        aria-controls="collapseExample">
+                                        See more deal<i class="fa-solid fa-angle-down"></i>
+                                    </a>
+                                </p>
+                            </ul>
+                            <div class="collapse" id="collapseExample">
+                                <div>
+                                    <ul>
+                                        <li>
+                                            <table border="1">
+                                                <tr>
+                                                    <td style="width: 25%; text-align: center; height: 22px;"><span
+                                                            style="color: #000000; font-size: 13px;">
+                                                            Buy 1 accessories</span></td>
+                                                    <td style="width: 25%; text-align: center; height: 22px;"><span
+                                                            style="color: #000000; font-size: 13px;">Buy 3 accessories</span>
+                                                    </td>
+                                                    <td style="width: 25%; text-align: center; height: 22px;"><span
+                                                            style="color: #000000; font-size: 13px;">Buy 4 accessories</span>
+                                                    </td>
+                                                    <td style="width: 25%; text-align: center; height: 22px;"><span
+                                                            style="color: #000000; font-size: 13px;">Buy 5 accessories</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="width: 25%; text-align: center; height: 22px;"><span
+                                                            style="color: #000000; font-size: 11px; padding: 10px;">50.000VND discount</span>
+                                                    </td>
+                                                    <td style="width: 25%; text-align: center; height: 22px;"><span
+                                                            style="color: #000000; font-size: 11px; padding: 10px;">100.000VND discount</span>
+                                                    </td>
+                                                    <td style="width: 25%; text-align: center; height: 22px;"><span
+                                                            style="color: #000000; font-size: 11px;padding: 10px;">150.000VND discount</span>
+                                                    </td>
+                                                    <td style="width: 25%; text-align: center; height: 22px;"><span
+                                                            style="color: #000000; font-size: 11px;padding: 10px;">200.000VND discount</span>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </li>
+                                        <li>
+                                            <p style="margin-top: 10px;"><i class="fa-solid fa-circle" style="font-size: 8px;"></i> 200.000 VND discount on Apple Care+</p>
+                                        </li>
+                                        <li>
+                                            <p><i class="fa-solid fa-circle"></i> 20% discount on diamond warranty</p>
+                                        </li>
+                                        <li>
+                                            <p><i class="fa-solid fa-circle"></i> 200.000 VND discount for iPhone 14 Pro Max Clear Case with MagSafe
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="store" style="display: flex; color: #0066CC; margin-top: 15px; align-items: center;">
+                    <a href="" style="font-size: 18px;"><i class="fa-solid fa-building"></i></a>
+                    <a href="" style="font-size: 14px; margin-left: 10px; text-decoration: none;">Product availablity</a>
+                </div>
+                <div class="button_product">
+                    <input type="button" id="buy_btn" value="Add to cart">
+                    <div class="smallbtn">
+                        <button><a href="" style="text-decoration: none;font-weight: 700;">Buy now</a></button>
+                        <button style="margin-left: 10px;"><a href="" style="text-decoration: none;font-weight: 700;"><i
+                                    class="fa-solid fa-repeat"></i>Trade in</a></button>
+                    </div>
+                </div>
+                <div class="product_box">
+                    <ul>
+                        <li><i class="fa-solid fa-circle-check"></i>
+                            <p>The package includes: Box, Instruction manual, SIM ejector tool, Lightning - Type C cable</p>
+                        </li>
+                        <li style="margin-top: 5px;"><i class="fa-solid fa-circle-check"></i>
+                            <p>One-year official warranty <a href=""
+                                    style="text-decoration: none; color: #007ED8;">(detail)</a></p>
+                        </li>
+                        <li style="margin-top: 5px;"><i class="fa-solid fa-circle-check"></i>
+                            <p>Fast delivery nationwide<a href="" style="text-decoration: none; color: #007ED8;">(detail)</a></p>
+                        </li>
+                        <li style="margin-top: 5px;"><i class="fa-solid fa-circle-check"></i>
+                            <p>Order 1900.6626 (7:30 - 22:00)</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="goi-y">
+
+        <div class="title" style="margin-left: 160px;">
+            <h3 style="font-weight: 800;">Suggested products</h3>
+        </div>
+        <div class="reponsive">
+            <div class="apple">
+                <div class="box">
+                    <div class="products">
+                        <a href=""></a><img src="./products-image/0001395_sac-20w-usb-c-power-adapter_240.png" alt="" />
+                        <h5><a href=""></a>Charge 20W USB-C Power Adapter</h5>
+                        <div class="price">
+                            <span class="gia-ban">510.000VND</span>
+                            <span class="gia-goc">690.000VND</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="products">
+                        <a href=""></a><img src="./products-image/0011256_applecare-for-iphone-14-pro-max_240.png"
+                            alt="" />
+                        <h5><a href=""></a>AppleCare+ for iPhone 14 Pro Max</h5>
+                        <div class="price">
+                            <span class="gia-ban">5.490.000VND</span>
+                            <span class="gia-goc">5.990.000VND</span>
+                        </div>
+                        <div class="tittle-percent">
+                            <span class="tittle">
+                                Buy-in discount: 
+                            </span>
+                            <span class="price-percent">200.000VND</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="products">
+                        <a href=""></a><img
+                            src="./products-image/0001737_iphone-14-pro-max-clear-case-with-magsafe_240.jpeg" alt="" />
+                        <h5><a href=""></a>iPhone 14 Pro Max Clear Case with Magsafe</h5>
+                        <div class="price">
+                            <span class="gia-ban">1.250.000VND</span>
+                            <span class="gia-goc">1.590.000VND</span>
+                        </div>
+                        <div class="tittle-percent">
+                            <span class="tittle">
+                                Buy-in discount: 
+                            </span>
+                            <span class="price-percent">200.000VND</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="products">
+                        <a href=""></a><img
+                            src="./products-image/0016024_kinh-cuong-luc-zeelot-apple-iphone-solidsleek-trong_240.jpeg"
+                            alt="" />
+                        <h5><a href=""></a>Clear Tempered Glass ZEELOT APPLE IPHONE SOLIDSLEEK</h5>
+                        <div class="price">
+                            <span class="gia-ban">390.000VND</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="describeBtn">
+        <button style="border-color: #007bff;" id="describeBtn1" onclick="describeBtn1()">
+            <a href="#content1">Product Description</a>
+        </button>
+        <button id="describeBtn2" onclick="describeBtn2()">
+            <a href="#content3">
+                Product Specification
+            </a>
+        </button>
+        <button id="describeBtn3" onclick="describeBtn3()" style="text-align: center;">
+            <p>
+                Product Info
+            </p>
+        </button>
+        <button id="describeBtn4" onclick="describeBtn4()">
+            <a href="#cmt">Q&A</a>
+        </button>
+    </div>
+    <div style="display: flex;justify-content: center;">
+        <div style="display: none; margin-top: 20px;" id="table">
+            <table>
+                <tr class="odd">
+                    <td class="left">Memory Storage:</td>
+                    <td class="right">218GB / 256GB / 512GB / 1TB </td>
+                </tr>
+                <tr class="even">
+                    <td class="left">Display:</td>
+                    <td class="right">6.7″ Super Retina XDR display</td>
+                </tr>
+                <tr class="odd">
+                    <td class="left">Screen Resolution:</td>
+                    <td class="right"> 2796 x 1290 pixel ở 460 ppi</td>
+                </tr>
+                <tr class="even">
+                    <td class="left">Front Camera:</td>
+                    <td class="right">6.7″ Super Retina XDR display</td>
+                </tr>
+                <tr class="odd">
+                    <td class="left">Batteries:</td>
+                    <td class="right">Up to 29 hours of video playback (according to Apple)</td>
+                </tr>
+                <tr class="even">
+                    <td class="left">Charger:</td>
+                    <td class="right">MagSafe and Charger Qi</td>
+                </tr>
+                <tr class="odd">
+                    <td class="left">Network Connections:</td>
+                    <td class="right">2 SIMs (1 Nano SIM and 1 eSIM or 2 eSIM), 5G support</td>
+                </tr>
+                <tr class="even">
+                    <td class="left">Chip:</td>
+                    <td class="right">Chip A16 Bionic 6-core, GPU 5-core, 16-core Neural Engine
+                    </td>
+                </tr>
+                <tr class="odd">
+                    <td class="left">RAM:</td>
+                    <td class="right">6GB</td>
+                </tr>
+                <tr class="even">
+                    <td class="left">Security:</td>
+                    <td class="right">Face ID, enabled by TrueDepth front camera for facial recognition
+                    </td>
+                </tr>
+                <tr class="odd">
+                    <td class="left">Waterproof:</td>
+                    <td class="right">IP68 (up to 6 meters depth for up to 30 minutes) according to IEC 60529
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div style="display: flex; justify-content: center;">
+        <div id="contentT">
+            <div class="content">
+                <div id="content1">
+                    <div class="tittle">
+                        <img src="./products-image/hero_logo_small_2x.png" alt="" style="">
+                        <p class="tittle1">Pro. Beyond.</p>
+                    </div>
+                    <div style="align-items: center;">
+                    <p class="tittle2">iPhone 14 Pro Max brings different experiences. Dynamic Island makes it easy to access information and track activities. The 48MP camera delivers incredible detail when you take pictures in ProRAW. Impressive battery life with iOS 16, the iPhone 14 Pro is the best example of Apple's world-class software and hardware integration.</p>
+                    </div>
+                </div>
+                <div id="more" style="margin-top: 100px;">
+                    <img src="./products-image/hero_large.png" alt="" style="margin-top: 100px;">
+                    <div class="content2">
+                        <div class="part1">
+                            <div class="section1">
+                                <img src="./products-image/dynamic_island_large.png" alt="">
+                                <div style="margin-left: 30px;">
+                                    <p style="font-weight: 600; font-size: 20px;">Dynamic Island</p>
+                                    <p style="font-weight: 600; font-size: 25px;">A wonderful way to interact with iPhone
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="section2">
+                                <p
+                                    style="margin-top: 50px; font-size: 22px;font-weight: 600;padding-left: 10px;padding-right: 10px;">
+                                    48MP Main Camera. The detail is unbelievable.</p>
+                                <img src="./products-image/camera_detail_large.png" alt="" style="border-bottom-right-radius: 15px;
+                                border-bottom-left-radius: 15px;">
+                            </div>
+                        </div>
+                        <div class="part2">
+                            <div class="section1">
+                                <p>Super fast chip
+                                    <br>make it all.
+                                </p>
+                                <div>
+                                    <img src="./products-image/chip_icon_large.png" alt="">
+                                </div>
+                            </div>
+                            <div class="section2">
+                                <p class="tittle1">
+                                    Powerful battery</p>
+                                <p class="tittle2">all day,</p>
+                                <p class="tittle3">accept <br> all.</p>
+                            </div>
+                        </div>
+                        <div class="part3">
+                            <div class="section1">
+                                <img src="./products-image/cinematic_mode_large.png" alt="">
+                                <div class="text">
+                                    <h5>Cinematic</h5>
+                                    <p>Shoot 4K HDR movies like professional at 24 fps.</p>
+                                </div>
+                            </div>
+                            <div class="section2">
+                                <p>Always on Display.
+                                    <br>The discreet way to
+                                    <br>update information.
+                                </p>
+                                <img src="./products-image/display_always_on_large.png" alt="">
+                            </div>
+                        </div>
+                        <div class="part4">
+                            <div class="section1">
+                                <img src="./products-image/water_resistance_large.png" alt="">
+                                <div class="text">
+                                    (Khỏi lo.)
+                                </div>
+                            </div>
+                            <div class="section2">
+                                <img style="width:248px; height: 234px;" src="./products-image/ceramic_shield_large.png"
+                                    alt="">
+                                <div style="margin-left: 40px;">
+                                    <h5 style="font-weight: 600; font-size: 20px;">Ceramic Shield</h5>
+                                    <p style="font-weight: 600; font-size: 30px;">Stronger than any
+                                        <br>smartphone glass.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="part5">
+                            <div class="section1">
+                                <img src="./products-image/action_mode_large.png" alt="">
+                                <div class="text">
+                                    <h5>Action Mode</h5>
+                                    <p>Shaking when recording, the video is still stable.</p>
+                                </div>
+                            </div>
+                            <div class="section2">
+                                <img src="./products-image/crash_detection_large.png" alt="">
+                            </div>
+                        </div>
+                        <div class="part6">
+                            <div class="section1">
+                                <div class="text">
+                                    <p>Looking at selfie is knowing 
+                                        <br>the high-class camera.
+                                    </p>
+                                </div>
+                                <img style="display: block; margin-top: 80px;"
+                                    src="./products-image/camera_selfie_large.png" alt="">
+                            </div>
+
+                            <div class="section2">
+                                <div>
+                                    <p>iPhone 14 Pro Max</p>
+                                    <p style="font-size: 40px; margin-top: -20px;">6,7”</p>
+                                    <img style="margin-top: 20px;" src="./products-image/iphone_pro_max_large.png"
+                                        alt="">
+                                </div>
+                                <div style="margin-top: 35px; margin-left: 50px;">
+                                    <p>iPhone 14 Pro</p>
+                                    <p style="font-size: 40px; margin-top: -20px;">6,1”</p>
+                                    <img style="margin-top: 20px;" src="./products-image/iphone_pro_large.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="content3" style="background-color: white; padding-top: 80px; padding-bottom: 30px;">
+                        <h3 style="font-weight: 600; font-size: 35px; text-align: center;">iPhone nào phù hợp với bạn
+                        </h3>
+                        <div style="display: flex; margin-top: 70px; text-align: center; margin-left: 85px;">
+                            <div class="section1">
+                                <div class="dropdown">
+                                    <button data-bs-toggle="dropdown"
+                                        style="font-size: 14px; padding-bottom: 12px; background-color: white; border-style: none; border-bottom: thin solid rgb(215, 215, 215); ">
+                                        iPhone 14 Pro Max <i class="fa-solid fa-chevron-down"
+                                            style="margin-left: 30px; color: #0066CC;"></i>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <p class="dropdown-header">Các phiên bản iPhone mới</p>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">iPhone 14 Pro Max</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone 14 Pro</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone 14 Plus</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone 14 </a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone SE (thế hệ thứ 3)</a></li>
+                                        <li>
+                                            <p class="dropdown-header">Các phiên bản iPhone khác</p>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">iPhone 13 Pro Max</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone 13 Pro</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone 13</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone 13 Mini</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone 12 Pro Max</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone 12 Pro</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone 12</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone 12 Mini</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone 11 Pro Max</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone 11 Pro</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone 11</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone SE (thế hệ thứ 2)</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone XS Max</a></li>
+                                    </ul>
+                                </div>
+                                <div style="margin-top: 40px;">
+                                    <img src="./products-image/header_iphone_14_pro_max_twilight_purple_large.png"
+                                        alt="">
+                                </div>
+                                <div
+                                    style="display: flex; padding-top: 45px; padding-bottom: 45px; border-bottom: thin solid rgb(215, 215, 215);">
+                                    <div class="circle"
+                                        style="background-color: black; width: 12px; height: 12px; border-radius: 50%;  margin-left: 55px;">
+                                    </div>
+                                    <div class="circle"
+                                        style="background-color: #FCEBD3; width: 12px; height: 12px; border-radius: 50%; margin-left: 5px;">
+                                    </div>
+                                    <div class="circle"
+                                        style="background-color: #E3E5E3; width: 12px; height: 12px; border-radius: 50%;  margin-left: 5px;">
+                                    </div>
+                                    <div class="circle"
+                                        style="background-color: #61586B; width: 12px; height: 12px; border-radius: 50%;  margin-left: 5px;">
+                                    </div>
+                                </div>
+                                <div style="margin-top: 30px;">
+                                    <button
+                                        style="width: 114.26px; height: 35.6px; border-radius: 50px; background-color: white;">Mua
+                                        ngay</button>
+                                </div>
+                                <div style="margin-top: 50px;">
+                                    <h5 style="font-weight: 600;">6.7"</h5>
+                                    <p>Màn hình Super<br>Retina XDR</p>
+                                    <p>Công nghệ ProMotion</p>
+                                    <p>Màn hình Luôn Bật</p>
+                                </div>
+                                <div style="margin-top: 45px;">
+                                    <img src="./products-image/icon_dynamic_island_large.png" alt="">
+                                    <p style="margin-top: 10px;">Dynamic Island
+                                        <br> Một cách tuyệt diệu để
+                                        <br>tương tác với iPhone
+                                    </p>
+                                </div>
+                                <div style="margin-top: 45px;">
+                                    <img src="./products-image/icon_sos_large.png" alt="">
+                                    <p style="margin-top: 10px;">SOS Khẩn Cấp</p>
+                                    <p>Phát Hiện Va Chạm</p>
+                                </div>
+                                <div style="margin-top: 45px;">
+                                    <img src="./products-image/icon_camera_iphone_14_pro_max_large.png" alt="">
+                                    <p style="margin-top: 10px;">Hệ thống camera <br>chuyên nghiệp
+                                        <br> Chính 48MP | Ultra Wide
+                                        <br>Telephoto
+                                    </p>
+                                    <p>Photonic Engine cho màu <br>sắc và chi tiết ấn tượng</p>
+                                    <p>Camera trước TrueDepth <br>có khả năng tự động <br>lấy nét</p>
+                                </div>
+                                <div style="margin-top: 45px;">
+                                    <img src="./products-image/icon_action_mode_large.png" alt="">
+                                    <p style="margin-top: 10px;">Chế độ Hành Động giúp <br>quay video cầm tay không
+                                        <br>bị
+                                        rung
+                                        nhòe</p>
+                                </div>
+                                <div style="margin-top: 45px;">
+                                    <img src="./products-image/icon_newbattery_large.png" alt="">
+                                    <p style="margin-top: 10px;">Thời gian xem video <br>lên đến 29 giờ</p>
+                                </div>
+                                <div style="margin-top: 45px;">
+                                    <img src="./products-image/icon_A16_chip_large.png" alt="">
+                                    <p style="margin-top: 10px;">Chip A16 Bionic với <br>GPU 5 lõi</p>
+                                </div>
+                                <div style="margin-top: 45px;">
+                                    <img src="./products-image/icon_face_id_large.png" alt="">
+                                    <p style="margin-top: 10px;">Face ID</p>
+                                </div>
+                                <div style="margin-top: 45px;">
+                                    <img src="./products-image/icon_5G_large.png" alt="">
+                                    <p style="margin-top: 10px;">Mạng di động 5G <br>siêu nhanh</p>
+                                </div>
+                            </div>
+                            <div class="section2" style="margin-left: 45px;">
+                                <div class="dropdown">
+                                    <button data-bs-toggle="dropdown"
+                                        style="font-size: 14px; padding-bottom: 12px; background-color: white; border-style: none; border-bottom: thin solid rgb(215, 215, 215); ">
+                                        iPhone 14 Pro <i class="fa-solid fa-chevron-down"
+                                            style="margin-left: 30px; color: #0066CC;"></i>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <p class="dropdown-header">Các phiên bản iPhone mới</p>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">iPhone 14 Pro Max</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone 14 Pro</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone 14 Plus</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone 14 </a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone SE (thế hệ thứ 3)</a></li>
+                                        <li>
+                                            <p class="dropdown-header">Các phiên bản iPhone khác</p>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">iPhone 13 Pro Max</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone 13 Pro</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone 13</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone 13 Mini</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone 12 Pro Max</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone 12 Pro</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone 12</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone 12 Mini</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone 11 Pro Max</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone 11 Pro</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone 11</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone SE (thế hệ thứ 2)</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone XS Max</a></li>
+                                    </ul>
+                                </div>
+                                <div style="margin-top: 40px;">
+                                    <img src="./products-image/header_iphone_14_pro_twilight_purple_large.png" alt=""
+                                        style="padding-top: 17px;">
+                                </div>
+                                <div
+                                    style="display: flex; padding-top: 45px; padding-bottom: 45px; border-bottom: thin solid rgb(215, 215, 215);;">
+                                    <div class="circle"
+                                        style="background-color: black; width: 12px; height: 12px; border-radius: 50%;  margin-left: 55px;">
+                                    </div>
+                                    <div class="circle"
+                                        style="background-color: #FCEBD3; width: 12px; height: 12px; border-radius: 50%; margin-left: 5px;">
+                                    </div>
+                                    <div class="circle"
+                                        style="background-color: #E3E5E3; width: 12px; height: 12px; border-radius: 50%;  margin-left: 5px;">
+                                    </div>
+                                    <div class="circle"
+                                        style="background-color: #61586B; width: 12px; height: 12px; border-radius: 50%;  margin-left: 5px;">
+                                    </div>
+                                </div>
+                                <div style="margin-top: 30px;">
+                                    <button
+                                        style="width: 114.26px; height: 35.6px; border-radius: 50px; background-color: white;">Mua
+                                        ngay</button>
+                                </div>
+                                <div style="margin-top: 50px;">
+                                    <h5 style="font-weight: 600;">6.1"</h5>
+                                    <p>Màn hình Super<br>Retina XDR</p>
+                                    <p>Công nghệ ProMotion</p>
+                                    <p>Màn hình Luôn Bật</p>
+                                </div>
+                                <div style="margin-top: 45px;">
+                                    <img src="./products-image/icon_dynamic_island_large.png" alt="">
+                                    <p style="margin-top: 10px;">Dynamic Island
+                                        <br> Một cách tuyệt diệu để
+                                        <br>tương tác với iPhone
+                                    </p>
+                                </div>
+                                <div style="margin-top: 45px;">
+                                    <img src="./products-image/icon_sos_large.png" alt="">
+                                    <p style="margin-top: 10px;">SOS Khẩn Cấp</p>
+                                    <p>Phát Hiện Va Chạm</p>
+                                </div>
+                                <div style="margin-top: 45px;">
+                                    <img src="./products-image/icon_camera_iphone_14_pro_max_large.png" alt="">
+                                    <p style="margin-top: 10px;">Hệ thống camera <br>chuyên nghiệp
+                                        <br> Chính 48MP | Ultra Wide
+                                        <br>Telephoto
+                                    </p>
+                                    <p>Photonic Engine cho màu <br>sắc và chi tiết ấn tượng</p>
+                                    <p>Camera trước TrueDepth <br>có khả năng tự động <br>lấy nét</p>
+                                </div>
+                                <div style="margin-top: 45px;">
+                                    <img src="./products-image/icon_action_mode_large.png" alt="">
+                                    <p style="margin-top: 10px;">Chế độ Hành Động giúp <br>quay video cầm tay không
+                                        <br>bị
+                                        rung
+                                        nhòe</p>
+                                </div>
+                                <div style="margin-top: 45px;">
+                                    <img src="./products-image/icon_newbattery_large.png" alt="">
+                                    <p style="margin-top: 10px;">Thời gian xem video <br>lên đến 23 giờ</p>
+                                </div>
+                                <div style="margin-top: 45px;">
+                                    <img src="./products-image/icon_A16_chip_large.png" alt="">
+                                    <p style="margin-top: 10px;">Chip A16 Bionic với <br>GPU 5 lõi</p>
+                                </div>
+                                <div style="margin-top: 45px;">
+                                    <img src="./products-image/icon_face_id_large.png" alt="">
+                                    <p style="margin-top: 10px;">Face ID</p>
+                                </div>
+                                <div style="margin-top: 45px;">
+                                    <img src="./products-image/icon_5G_large.png" alt="">
+                                    <p style="margin-top: 10px;">Mạng di động 5G <br>siêu nhanh</p>
+                                </div>
+                            </div>
+                            <div class="section3" style="margin-left: 45px;">
+                                <div class="dropdown">
+                                    <button data-bs-toggle="dropdown"
+                                        style="font-size: 14px; padding-bottom: 12px; background-color: white; border-style: none; border-bottom: thin solid rgb(215, 215, 215); ">
+                                        iPhone 14 Plus <i class="fa-solid fa-chevron-down"
+                                            style="margin-left: 30px; color: #0066CC;"></i>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <p class="dropdown-header">Các phiên bản iPhone mới</p>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">iPhone 14 Pro Max</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone 14 Pro</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone 14 Plus</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone 14 </a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone SE (thế hệ thứ 3)</a></li>
+                                        <li>
+                                            <p class="dropdown-header">Các phiên bản iPhone khác</p>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">iPhone 13 Pro Max</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone 13 Pro</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone 13</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone 13 Mini</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone 12 Pro Max</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone 12 Pro</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone 12</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone 12 Mini</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone 11 Pro Max</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone 11 Pro</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone 11</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone SE (thế hệ thứ 2)</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone XS Max</a></li>
+                                    </ul>
+                                </div>
+                                <div style="margin-top: 40px;">
+                                    <img src="./products-image/header_iphone_14_plus_blue_large.png" alt="">
+                                </div>
+                                <div
+                                    style="display: grid; grid-template-rows: 20px; grid-template-columns: [first] 20px[line2] 20px 10px ; padding-top: 35px; padding-bottom: 35px; border-bottom: thin solid rgb(215, 215, 215); width: 150px; padding-left: 50px;">
+                                    <div class="circle"
+                                        style="background-color: #174C6F; width: 12px; height: 12px; border-radius: 50%;">
+                                    </div>
+                                    <div class="circle"
+                                        style="background-color: #BAB4E7; width: 12px; height: 12px; border-radius: 50%;">
+                                    </div>
+                                    <div class="circle"
+                                        style="background-color: #fdeb66; width: 12px; height: 12px; border-radius: 50%;  ">
+                                    </div>
+                                    <div class="circle"
+                                        style="background-color: black; width: 12px; height: 12px; border-radius: 50%;  ">
+                                    </div>
+                                    <div class="circle"
+                                        style="background-color: #F4E9D4; width: 12px; height: 12px; border-radius: 50%; ">
+                                    </div>
+                                    <div class="circle"
+                                        style="background-color: #DA3C3A; width: 12px; height: 12px; border-radius: 50%;">
+                                    </div>
+                                </div>
+                                <div style="margin-top: 30px;">
+                                    <button
+                                        style="width: 114.26px; height: 35.6px; border-radius: 50px; background-color: white;">Mua
+                                        ngay</button>
+                                </div>
+                                <div style="margin-top: 50px; padding-bottom: 50px;">
+                                    <h5 style="font-weight: 600;">6.7"</h5>
+                                    <p>Màn hình Super<br>Retina XDR</p>
+                                </div>
+                                <div style="margin-top: 80px; padding-bottom: 45px; font-weight: 900;">
+                                    —
+                                </div>
+                                <div style="margin-top: 45px;">
+                                    <img src="./products-image/icon_sos_large.png" alt="">
+                                    <p style="margin-top: 10px;">SOS Khẩn Cấp</p>
+                                    <p>Phát Hiện Va Chạm</p>
+                                </div>
+                                <div style="margin-top: 45px;">
+                                    <img src="./products-image/icon_camera_iphone_14_plus_large.png" alt="">
+                                    <p style="margin-top: 10px;">Hệ thống camera <br>tiên tiến
+                                        <br> Chính 12MP | Ultra Wide
+                                        <br>Telephoto
+                                    </p>
+                                    <p>Photonic Engine cho màu <br>sắc và chi tiết ấn tượng</p>
+                                    <p>Camera trước TrueDepth <br>có khả năng tự động <br>lấy nét</p>
+                                </div>
+                                <div style="margin-top: 45px;">
+                                    <img src="./products-image/icon_action_mode_large.png" alt="">
+                                    <p style="margin-top: 10px;">Chế độ Hành Động giúp <br>quay video cầm tay không
+                                        <br>bị
+                                        rung
+                                        nhòe</p>
+                                </div>
+                                <div style="margin-top: 45px;">
+                                    <img src="./products-image/icon_newbattery_large.png" alt="">
+                                    <p style="margin-top: 10px;">Thời gian xem video <br>lên đến 26 giờ</p>
+                                </div>
+                                <div style="margin-top: 45px;">
+                                    <img src="./products-image/icon_A15_chip_large.png" alt="">
+                                    <p style="margin-top: 10px;">Chip A15 Bionic với <br>GPU 5 lõi</p>
+                                </div>
+                                <div style="margin-top: 45px;">
+                                    <img src="./products-image/icon_face_id_large.png" alt="">
+                                    <p style="margin-top: 10px;">Face ID</p>
+                                </div>
+                                <div style="margin-top: 45px;">
+                                    <img src="./products-image/icon_5G_large.png" alt="">
+                                    <p style="margin-top: 10px;">Mạng di động 5G <br>siêu nhanh</p>
+                                </div>
+                            </div>
+                            <div class="section4" style="margin-left: 45px;">
+                                <div class="dropdown">
+                                    <button data-bs-toggle="dropdown"
+                                        style="font-size: 14px; padding-bottom: 12px; background-color: white; border-style: none; border-bottom: thin solid rgb(215, 215, 215); ">
+                                        iPhone 14 <i class="fa-solid fa-chevron-down"
+                                            style="margin-left: 30px; color: #0066CC;"></i>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <p class="dropdown-header">Các phiên bản iPhone mới</p>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">iPhone 14 Pro Max</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone 14 Pro</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone 14 Plus</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone 14 </a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone SE (thế hệ thứ 3)</a></li>
+                                        <li>
+                                            <p class="dropdown-header">Các phiên bản iPhone khác</p>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">iPhone 13 Pro Max</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone 13 Pro</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone 13</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone 13 Mini</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone 12 Pro Max</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone 12 Pro</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone 12</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone 12 Mini</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone 11 Pro Max</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone 11 Pro</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone 11</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone SE (thế hệ thứ 2)</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone XS Max</a></li>
+                                    </ul>
+                                </div>
+                                <div style="margin-top: 40px;">
+                                    <img src="./products-image/header_iphone_14_blue_large.png"
+                                        style="padding-top: 17px;" alt="">
+                                </div>
+                                <div
+                                    style="display: grid; grid-template-rows: 20px; grid-template-columns: [first] 20px[line2] 20px 10px ; padding-top: 35px; padding-bottom: 35px; border-bottom: thin solid rgb(215, 215, 215); width: 150px; padding-left: 50px;">
+                                    <div class="circle"
+                                        style="background-color: #174C6F; width: 12px; height: 12px; border-radius: 50%;">
+                                    </div>
+                                    <div class="circle"
+                                        style="background-color: #BAB4E7; width: 12px; height: 12px; border-radius: 50%;">
+                                    </div>
+                                    <div class="circle"
+                                        style="background-color: #fdeb66; width: 12px; height: 12px; border-radius: 50%;  ">
+                                    </div>
+                                    <div class="circle"
+                                        style="background-color: black; width: 12px; height: 12px; border-radius: 50%;  ">
+                                    </div>
+                                    <div class="circle"
+                                        style="background-color: #F4E9D4; width: 12px; height: 12px; border-radius: 50%; ">
+                                    </div>
+                                    <div class="circle"
+                                        style="background-color: #DA3C3A; width: 12px; height: 12px; border-radius: 50%;">
+                                    </div>
+                                </div>
+                                <div style="margin-top: 30px;">
+                                    <button
+                                        style="width: 114.26px; height: 35.6px; border-radius: 50px; background-color: white;">Mua
+                                        ngay</button>
+                                </div>
+                                <div style="margin-top: 50px; padding-bottom: 50px;">
+                                    <h5 style="font-weight: 600;">6.1"</h5>
+                                    <p>Màn hình Super<br>Retina XDR</p>
+                                </div>
+                                <div style="margin-top: 80px; padding-bottom: 45px; font-weight: 900;">
+                                    —
+                                </div>
+                                <div style="margin-top: 45px;">
+                                    <img src="./products-image/icon_sos_large.png" alt="">
+                                    <p style="margin-top: 10px;">SOS Khẩn Cấp</p>
+                                    <p>Phát Hiện Va Chạm</p>
+                                </div>
+                                <div style="margin-top: 45px;">
+                                    <img src="./products-image/icon_camera_iphone_14_plus_large.png" alt="">
+                                    <p style="margin-top: 10px;">Hệ thống camera <br>tiên tiến
+                                        <br> Chính 12MP | Ultra Wide
+                                        <br>Telephoto
+                                    </p>
+                                    <p>Photonic Engine cho màu <br>sắc và chi tiết ấn tượng</p>
+                                    <p>Camera trước TrueDepth <br>có khả năng tự động <br>lấy nét</p>
+                                </div>
+                                <div style="margin-top: 45px;">
+                                    <img src="./products-image/icon_action_mode_large.png" alt="">
+                                    <p style="margin-top: 10px;">Chế độ Hành Động giúp <br>quay video cầm tay không
+                                        <br>bị
+                                        rung
+                                        nhòe</p>
+                                </div>
+                                <div style="margin-top: 45px;">
+                                    <img src="./products-image/icon_newbattery_large.png" alt="">
+                                    <p style="margin-top: 10px;">Thời gian xem video <br>lên đến 20 giờ</p>
+                                </div>
+                                <div style="margin-top: 45px;">
+                                    <img src="./products-image/icon_A15_chip_large.png" alt="">
+                                    <p style="margin-top: 10px;">Chip A15 Bionic với <br>GPU 5 lõi</p>
+                                </div>
+                                <div style="margin-top: 45px;">
+                                    <img src="./products-image/icon_face_id_large.png" alt="">
+                                    <p style="margin-top: 10px;">Face ID</p>
+                                </div>
+                                <div style="margin-top: 45px;">
+                                    <img src="./products-image/icon_5G_large.png" alt="">
+                                    <p style="margin-top: 10px;">Mạng di động 5G <br>siêu nhanh</p>
+                                </div>
+                            </div>
+                            <div class="section5" style="margin-left: 45px;">
+                                <div class="dropdown">
+                                    <button data-bs-toggle="dropdown"
+                                        style="font-size: 14px; padding-bottom: 12px; background-color: white; border-style: none; border-bottom: thin solid rgb(215, 215, 215); ">
+                                        iPhone SE <i class="fa-solid fa-chevron-down"
+                                            style="margin-left: 30px; color: #0066CC;"></i>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <p class="dropdown-header">Các phiên bản iPhone mới</p>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">iPhone 14 Pro Max</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone 14 Pro</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone 14 Plus</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone 14 </a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone SE (thế hệ thứ 3)</a></li>
+                                        <li>
+                                            <p class="dropdown-header">Các phiên bản iPhone khác</p>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">iPhone 13 Pro Max</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone 13 Pro</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone 13</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone 13 Mini</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone 12 Pro Max</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone 12 Pro</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone 12</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone 12 Mini</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone 11 Pro Max</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone 11 Pro</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone 11</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone SE (thế hệ thứ 2)</a></li>
+                                        <li><a class="dropdown-item" href="#">iPhone XS Max</a></li>
+                                    </ul>
+                                </div>
+                                <div style="margin-top: 40px;">
+                                    <img src="./products-image/header_iphone_se_gen03_midnight_large.png" alt=""
+                                        style="padding-top: 23px;">
+                                </div>
+                                <div
+                                    style="display: flex; padding-top: 45px; padding-bottom: 45px; border-bottom: thin solid rgb(215, 215, 215);;">
+                                    <div class="circle"
+                                        style="background-color: black; width: 12px; height: 12px; border-radius: 50%;  margin-left: 55px;">
+                                    </div>
+                                    <div class="circle"
+                                        style="background-color: #f4e9d4; width: 12px; height: 12px; border-radius: 50%;  margin-left: 5px;">
+                                    </div>
+                                    <div class="circle"
+                                        style="background-color: #da3c3a; width: 12px; height: 12px; border-radius: 50%;  margin-left: 5px;">
+                                    </div>
+                                </div>
+                                <div style="margin-top: 30px;">
+                                    <button
+                                        style="width: 114.26px; height: 35.6px; border-radius: 50px; background-color: white;">Mua
+                                        ngay</button>
+                                </div>
+                                <div style="margin-top: 50px; padding-bottom: 50px;">
+                                    <h5 style="font-weight: 600;">6.7"</h5>
+                                    <p>Màn hình Super<br>Retina XDR</p>
+                                </div>
+                                <div style="margin-top: 80px; padding-bottom: 45px; font-weight: 900;">
+                                    —
+                                </div>
+                                <div style="margin-top: 45px;">
+                                    <img src="./products-image/icon_sos_large.png" alt="">
+                                    <p style="margin-top: 10px;">SOS Khẩn Cấp</p>
+                                    <p>Phát Hiện Va Chạm</p>
+                                </div>
+                                <div style="margin-top: 45px; padding-bottom: 107px;">
+                                    <img src="./products-image/icon_camera_iphone_se_3rdGen_large.png   " alt="">
+                                    <p style="margin-top: 10px;">Hệ thống camera tiên tiến
+                                        <br> Chính 12MP
+                                    </p>
+                                    <p>Camera trước</p>
+                                </div>
+                                <div style="margin-top: 45px;">
+                                    <img src="./products-image/icon_action_mode_large.png" alt="">
+                                    <p style="margin-top: 10px;">Chế độ Hành Động giúp <br>quay video cầm tay không
+                                        <br>bị
+                                        rung
+                                        nhòe</p>
+                                </div>
+                                <div style="margin-top: 45px;">
+                                    <img src="./products-image/icon_newbattery_large.png" alt="">
+                                    <p style="margin-top: 10px;">Thời gian xem video <br>lên đến 15 giờ</p>
+                                </div>
+                                <div style="margin-top: 45px;">
+                                    <img src="./products-image/icon_A15_chip_large.png" alt="">
+                                    <p style="margin-top: 10px;">Chip A15 Bionic với <br>GPU 4 lõi</p>
+                                </div>
+                                <div style="margin-top: 45px;">
+                                    <img src="./products-image/icon_newtouch_id_large.png" alt="">
+                                    <p style="margin-top: 10px;">Touch ID</p>
+                                </div>
+                                <div style="margin-top: 45px;">
+                                    <img src="./products-image/icon_5G_large.png" alt="">
+                                    <p style="margin-top: 10px;">Mạng di động 5G <br>siêu nhanh</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 style="font-weight: 600; font-size: 35px; text-align: center; margin-top: 120px;">Easy upgrade. Simple conversion</h3>
+                        <div style="display: flex; justify-content: center; text-align: center; margin-top: 80px;">
+                            <div
+                                style=" background-color: #f5f5f7; padding-top: 50px;padding-bottom: 50px; padding-left: 100px; padding-right: 100px; border-radius: 20px;">
+                                <img src="./products-image/iphone_on_iphone_elevated_large.png" alt="">
+                                <p style="margin-top: 80px; font-size: 20px; font-weight: 600;">Upgrading from an<br>old iPhone?
+                                </p>
+                                <p style="font-size: 16px;">Simply place your old iPhone next to your<br>new iPhone, and with a few taps, you can<br>transfer your data completely<br>automatically.</p>
+                            </div>
+                            <div
+                                style=" background-color: #f5f5f7; padding-top: 50px;padding-bottom: 50px; padding-left: 100px; padding-right: 100px; margin-left: 20px; border-radius: 20px;">
+                                <img src="./products-image/flex_icon_ios_large.png" alt="">
+                                <p style="margin-top: 80px; font-size: 20px; font-weight: 600;">Switch to iPhone?</p>
+                                <p style="font-size: 16px;">When you buy a new iPhone, the <br>the Move to iOS app makes it easy<br>to transfer photos, WhatsApp messages,<br>contacts, and more.</p>
+                            </div>
+                        </div>
+                        <h3 style="font-weight: 600; font-size: 35px; text-align: center; margin-top: 120px;">
+                            Designed to make a difference.</h3>
+                        <div style="display: flex; justify-content: center; text-align: center; margin-top: 80px;">
+                            <div
+                                style=" background-color: #f5f5f7; padding-top: 50px;padding-bottom: 50px; padding-left: 100px; padding-right: 100px; border-radius: 20px;">
+                                <img src="./products-image/apple_logo_elevated_large.png" alt="">
+                                <p style="margin-top: 80px; font-size: 20px; font-weight: 600;">Recycle,
+                                    <br>redefined.
+                                </p>
+                                <p style="font-size: 16px;">iPhone recycles materials to conserve<br>precious natural resources.</p>
+                                <img src="./products-image/flex_icon_recycled_large.png" alt=""
+                                    style="margin-top: 100px;">
+                            </div>
+                            <div
+                                style=" background-color: #f5f5f7; padding-top: 50px; padding-left: 100px; padding-right: 100px; margin-left: 20px; border-radius: 20px;">
+                                <img src="./products-image/apple_logo_lock_elevated_large.png" alt="">
+                                <p style="margin-top: 80px; font-size: 20px; font-weight: 600;">Privacy.
+                                    <br>Very iPhone.
+                                </p>
+                                <p style="font-size: 16px;">From passcodes to Privacy Reports,<br> Phone gives you control over<br>what you share.</p>
+                                <img src="./products-image/flex_privacy_large.png" alt="" style="margin-top:50px;">
+                            </div>
+                        </div>
+                        <h3 style="font-weight: 600; font-size: 35px; text-align: center; margin-top: 120px;">
+                            There are still many lovely accessories.</h3>
+                        <div style="display: grid;">
+                            <div class="text-center">
+                                <div
+                                    style=" margin-top: 80px; display: inline-flex; background-color: #f5f5f7; padding-left: 45px; padding-right: 45px; padding-top: 80px; padding-bottom: 20px; border-radius: 20px; align-items: center;">
+                                    <div style="text-align: left;">
+                                        <p style="font-size: 18px; font-weight: 600;">MagSafe Accessories</p>
+                                        <p style="font-size: 30px; font-weight: 800;">Add-in
+                                            <br>a back cover,
+                                            <br>a magnetic leather wallet
+                                            <br>or both.
+                                        </p>
+                                        <p style="font-size: 15px; font-weight: 400; margin-bottom: 40px;">An ecosystem of colorful accessories, easy mounting<br> and faster wireless charging.
+                                            With countless <br>combinations, every style has a suitable accessory.</p>
+                                        <a href="" style="text-decoration: none; color: #0066CC;">Learn more about Magsafe accessories
+                                            <i class="fa-solid fa-chevron-right"></i></a>
+                                    </div>
+                                    <div>
+                                        <img src="./products-image/flex_magsafe_large.png" style="margin-left: 90px;"
+                                            alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <div
+                                    style=" margin-top: 80px; display: inline-flex; background-color: #f5f5f7; padding-left: 45px; padding-right: 110px; padding-top: 80px; padding-bottom: 20px; border-radius: 20px; align-items: center;">
+                                    <div style="text-align: left;">
+                                        <p style="font-size: 18px; font-weight: 600;">AppleCare+</p>
+                                        <p style="font-size: 30px; font-weight: 800;">Professional support,<br>extended warranty.
+                                        </p>
+                                        <p style="font-size: 15px; font-weight: 400; margin-top: 40px;"><i
+                                                class="fa-solid fa-check" style="color: red;"></i>
+                                                Apple Certified Service</p>
+                                        <p style="font-size: 15px; font-weight: 400;"><i class="fa-solid fa-check"
+                                                style="color: red;"></i>
+                                                Apple Certified Service</p>
+                                        <p style="font-size: 15px; font-weight: 400; margin-bottom: 40px;"><i
+                                                class="fa-solid fa-check" style="color: red;"></i>
+                                                Warranty for damage caused by unexpected incidents</p>
+                                        <a href="" style="text-decoration: none; color: #0066CC;">Learn more about AppleCare+ for iPhone
+                                            <i class="fa-solid fa-chevron-right"></i></a>
+                                    </div>
+                                    <div>
+                                        <img src="./products-image/flex_applecare_large.png" style="margin-left: 170px;"
+                                            alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="font-size: 10px;color: #6e6e73; margin-top: 100px; margin-left: 80px;">
+                            <p> Refer to the legal disclaimer</p>
+
+                            <p>Battery and Power: All battery life claims are dependent on network configuration and many other factors; Actual results will vary. Batteries have limited charge cycles and may eventually need to be replaced. Battery life and charge cycles vary by usage and settings. Access  and  for more information.</p>
+
+
+                            <p>Water Resistant: iPhone 14 Pro and iPhone 14 Pro Max are splash-proof, water-resistant, and dust-proof. The product has been tested under controlled laboratory conditions to an IP68 rating according to IEC 60529 (water resistant up to 6 meters for up to 30 minutes). Spray resistance, water resistance and dust resistance are not permanent conditions, and this ability can be reduced due to normal wear and tear. Do not charge while iPhone is wet. Please refer to the user manual for instructions on how to clean and dry the machine. Damage caused by liquid infiltration is not covered under warranty.
+                            </p>
+
+
+                            <p>Collision Detection: iPhone 14 and iPhone 14 Pro can detect severe vehicle crashes and call for help. Requires cellular network connection or Wi-Fi calling.</p>
+
+
+                            <p>Screen: The screen has beautifully curved corners and fits neatly into a standard rectangle. When calculating in a standard rectangle, the screen size diagonally is 5.42 inch (iPhone 13 mini, iPhone 12 mini), 5.85 inch (iPhone 11 Pro, iPhone XS, iPhone X), 6.06 inch (iPhone 14, iPhone 13 Pro, iPhone 13, iPhone 12 Pro, iPhone 12, iPhone 11, iPhone XR), 6.12 inch (iPhone 14 Pro), 6.46 inch (iPhone 11 Pro Max, iPhone XS Max), 6.68 inch (iPhone 14 Plus, iPhone 13 Pro Max, iPhone 12 Pro Max), or 6.69 inch (iPhone 14 Pro Max). Actual display area is smaller.
+                            </p>
+
+
+                            <p>
+                                Mobile and Wireless Networks: Data plan required. 5G networks are only available in select markets and are offered through select carriers. Speed may vary by location and carrier. For information on 5G network support, please contact your carrier and access .</p>
+
+
+                            <p>Accessories: Accessories sold separately.</p>
+
+
+                            <p>Feature Availability: Some features are not available in some countries or regions.</p>
+
+
+                            <p>Feature Availability: Some features are not available in some countries or regions.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="timHieu">
+        <div style="text-align: center; color: #0066CC; padding-top: 30px;">
+            <a href="javascript:moreFunction()" id="myLink" style="text-decoration: none;">More</a>
+            <a href="javascript:moreFunction()" style="text-decoration: none;" id="icon1"><i
+                    class="fa-solid fa-chevron-down"></i></a>
+            <a href="javascript:moreFunction()" style="display: none; text-decoration: none;" id="icon2"><i
+                    class="fa-solid fa-chevron-up"></i></a>
+        </div>
+    </div>
+    <div id="cmt">
+        <div style="border-bottom: thin solid rgb(215, 215, 215); margin-left: 160px; margin-top: 60px;">
+            <h3 style="font-weight: 900;">Product Reviews</h3>
+        </div>
+        <div style="margin-left: 160px; margin-right: 160px; display: flex;">
+            <div style="border-right: thin solid rgb(215, 215, 215); display: inline-block; padding-right: 20px;">
+                <div
+                    style="display: inline-flex;margin-top: 20px; align-items: center; border-bottom: thin solid rgb(215, 215, 215); padding-bottom: 20px;">
+                    <div style="text-align: center;">
+                        <h1 style="font-weight: 900;">4,5</h1>
+                        <p style="font-size: 10px;">10 review(s)</p>
+                    </div>
+                    <div style="margin-left: 30px; display: grid;">
+                        <div style="display: flex; align-items: center;">
+                            <div>
+                                <p style="margin: 0px 0px 0px 0px;color: #969696;">5<i class="fa-solid fa-star"
+                                        style="color: #FEB700;"></i></p>
+                            </div>
+                            <div
+                                style="background-color: #E9ECEF; width: 255px; border-radius: 5px; margin-left: 10px;">
+                                <div style="height: 14px; width:70%; background-color: #FEB700;border-radius: 5px;">
+                                </div>
+                            </div>
+                        </div>
+                        <div style="display: flex; align-items: center; margin-top: 10px;">
+                            <div>
+                                <p style="margin: 0px 0px 0px 0px;color: #969696;">4<i class="fa-solid fa-star"
+                                        style="color: #FEB700;"></i></p>
+                            </div>
+                            <div
+                                style="background-color: #E9ECEF; width: 255px; border-radius: 5px; margin-left: 10px;">
+                                <div style="height: 14px; width:20%; background-color: #FEB700;border-radius: 5px;">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; align-items: center; margin-top: 10px;">
+                            <div>
+                                <p style="margin: 0px 0px 0px 0px;color: #969696;">3<i class="fa-solid fa-star"
+                                        style="color: #FEB700;"></i></p>
+                            </div>
+                            <div
+                                style="background-color: #E9ECEF; width: 255px; border-radius: 5px; margin-left: 10px;">
+                                <div style="height: 14px; width:10%; background-color: #FEB700;border-radius: 5px;">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; align-items: center; margin-top: 10px;">
+                            <div>
+                                <p style="margin: 0px 0px 0px 0px;color: #969696;">2<i class="fa-solid fa-star"
+                                        style="color: #FEB700;"></i></p>
+                            </div>
+                            <div
+                                style="background-color: #E9ECEF; width: 255px; border-radius: 5px; margin-left: 10px;">
+                                <div style="height: 14px; width:5%; background-color: #FEB700;border-radius: 5px;">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; align-items: center; margin-top: 10px;">
+                            <div>
+                                <p style="margin: 0px 0px 0px 0px;color: #969696;">1<i class="fa-solid fa-star"
+                                        style="color: #FEB700;"></i></p>
+                            </div>
+                            <div
+                                style="background-color: #E9ECEF; width: 255px; border-radius: 5px; margin-left: 10px;">
+                                <div style="height: 14px; width:0%; background-color: #FEB700;border-radius: 5px;">
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div style="margin-top: 10px;">
+                    <p style="font-weight: 900;">Write your own review</p>
+                    <div style="display: flex; align-items: center;">
+                        <div style="margin-right: 20px;">
+                            <p style="color: #515154; font-size: 14px; font-weight: 800;">Rating:</p>
+                        </div>
+                        <div class="stars" style="margin-top: -20px; margin-left: -15px;">
+                            <span class="star" onclick="rateProduct(1)">&#9733;</span>
+                            <span class="star" onclick="rateProduct(2)">&#9733;</span>
+                            <span class="star" onclick="rateProduct(3)">&#9733;</span>
+                            <span class="star" onclick="rateProduct(4)">&#9733;</span>
+                            <span class="star" onclick="rateProduct(5)">&#9733;</span>
+                        </div>
+                    </div>
+                    <div>
+                        <p style="color: #515154; font-size: 14px; font-weight: 800;">Your name:</p>
+                        <input type="text" id="text_1"
+                            style="width: 365.5px; height: 48px; padding: 8px 8px 8px 16px; border-radius: 8px; border-color: rgb(219, 219, 219); border-style: solid; font-size: 15px;">
+                    </div>
+                    <div style="margin-top: 20px;">
+                        <p style="color: #515154; font-size: 14px; font-weight: 800;">Review content:</p>
+                        <textarea name="" id="text_2"
+                            style="width: 365.5px; padding: 8px 8px 8px 16px; height: 128px;border-radius: 8px; border-color: rgb(219, 219, 219); border-style: solid; font-size: 15px;"></textarea>
+                    </div>
+                    <div style="margin-top: 20px;">
+                        <input type="file" id="imageUpload" accept="image/*">
+                        <button onclick="uploadImage()"
+                            style="border-radius: 15px; width: 100px; margin-left: -60px; background-color: #0066CC; color: white; font-size: 12px; font-weight: 500; height: 30px; border-color: white; border-style: solid;">Show picture</button>
+                        <div id="previewContainer" style="display: flex; margin-top: 20px; margin-bottom: 20px;"></div>
+                    </div>
+                </div>
+                <div>
+                    <button onclick="send()"
+                        style="margin-left: -5px; border-radius: 15px; width: 120px; background-color: #0066CC; color: white; font-size: 12px; font-weight: 500; height: 35px; border-color: white; border-style: solid;">Send review</button>
+                    <p style="color: red; font-weight: 500; font-size: 15px; margin-top: 10px;" id="err_text"></p>
+                </div>
+            </div>
+            <div style="margin-left: 20px; margin-top: 20px;">
+                <p style="font-size: 18px; font-weight: 600;" id="noCmt">There are no reviews yet</p>
+                <ul id="review-list" style="list-style: none;">
+                    <!-- Các đánh giá sẽ được thêm vào đây -->
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="regist">
+        <h4 class="tittle">Sign Up For Latest New From Shopdunk</h4>
+        <p>Latest Product And Sale  </p>
+        <form class="row z-3 needs-validation">
+            <input type="email" class="form-control" id="inputEmail" placeholder="Enter your email here...">
+            <input type="button" id="registBtn" value="Submit" onclick="checkregist()">
+            <p style="color:red; margin-top: 8px;" id="err_email"></p>
+        </form>
+    </div>
+    <div class="footer">
+        <div class="icon">
+            <a href="https://www.facebook.com/profile.php?id=100052907769357"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a>
+            <a href="https://twitter.com/?lang=vi"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.flickr.com/"><i class="fa-brands fa-flickr"></i></a>
+            <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <p>Powered by: Nguyen Duc</p>
+    </div>
+</body>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./1.js">
+
+</script>
+
+</html>

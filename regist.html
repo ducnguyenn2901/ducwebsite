@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css
+    " />
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="./regist.css" />
+    <title>AppleShop</title>
+    <link rel="shortcut icon"
+        href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABO0lEQVR4Ae3WgUdDURTH8WcLIRFAVUoKAjVQEVMogYBCESIqTIQIQR4CgQwM+hsiUjxUMkQUkSEShTyYWL++eMgU3HN7g+EDDny57nECSQ315yAMQxc9KGC8fpZGwDweIaymHbAC/TCSZsAQYihxjkyaAQdQIsYogjQDriCUkUPwXwFtyGESAwgSc8gji17MYBbDvgJasIMKlKjiDMsYxCIu8AklarjEtCWgHSeQQQ3rrgElyIPQJWAC8mDP9QmOIKMysq4BN5DRluUXPENGU5aAV8gobwl4gow2LAERZBRZAoqQBwXXgAXIgy/sugR04AXyoOq6ig8hD95dA/rxARmV3AKAbcjgDX2WgAxOIUdLPi6iTtxBdWLcowL9Yt/nSdaFYzwgwia6kUUrxlDELa6xZjrJ0tIMaAZ8A6GRaKMmbbcuAAAAAElFTkSuQmCC"
+        type="image/x-icon">
+</head>
+
+<body>
+    <div class="position-sticky top-0 left-0 z-3" style="display: flex; justify-content: center; background-color: #515154; ">
+        <div class="header">
+            <div class="logo">
+                <img src="./image/0000242_Logos Desktop.png" alt="" />
+            </div>
+            <div class="menu">
+                <a href="./index.jsp">iPhone</a>
+                <a href="./index.jsp">iPad</a>
+                <a href="./index.jsp">Mac</a>
+                <a href="./index.jsp">Watch</a>
+                <a href="./index.jsp">Sounds</a>
+                <a href="./index.jsp">Accessories</a>
+                <a href="./admin_login.jsp">Staff</a>
+                <a href="https://shopdunk.com/tra-gop">News</a>
+                <a href="https://shopdunk.com/khuyen-mai">Discount</a>
+            </div>
+            <div class="icon">
+                <a href=""><i class="fa-solid fa-magnifying-glass glasses"></i></a>
+                <a href=""><i class="fa-solid fa-bag-shopping bags"></i></a>
+                <a href="./admin_login.jsp"><i class="fa-solid fa-user-large users"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="links">
+        <a href="./index.html">Home</a>
+        <p style="margin-left: 8px;"> > </p>
+        <a href="./nhanvien.html" style="margin-left: 8px;">Staff</a>
+        <p style="margin-left: 8px;"> > </p>
+        <a href="" style="margin-left: 8px;">Regist</a>
+    </div>
+    <section class="vh-100" style="margin-top: -30px;">
+        <div class="container py-5 h-100">
+            <div class="row d-flex align-items-center justify-content-center h-100">
+                <div class="col-md-8 col-lg-7 col-xl-6">
+                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.svg"
+                        class="img-fluid" alt="Phone image">
+                </div>
+                <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
+                    <div class="form-outline mb-4">
+                        <h2 style="color: #515154;">Regist</h2>
+                    </div>
+                    <form class="needs-validation" method="post" action="RegistServlet" novalidate >
+                        <div class="form-outline mb-4" id="show_hide_password" style="display: flex; align-items: center; position: relative">
+                            <input type="text" class="form-control form-control-lg" name="txtName"
+                                placeholder="Name" required/>
+<!--                            <div class="input-group-addon" style="position: absolute; right:2%; padding-left: 20px">
+                                <a href=""><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+                            </div>-->
+                        </div>
+                        <div class="form-outline mb-4">
+                            <input type="text" name="txtEmail" class="form-control form-control-lg"
+                                placeholder="Email" required/>
+                        </div>
+                        <div class="form-outline mb-4" id="show_hide_password" style="display: flex; align-items: center; position: relative">
+                            <input type="password" name="txtPassword" class="form-control form-control-lg"
+                                placeholder="Password" required/>
+<!--                            <div class="input-group-addon" style="position: absolute; right:2%; padding-left: 20px">
+                                <a href=""><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+                            </div>-->
+                        </div>
+                        <div class="form-outline mb-4" id="show_hide_password" style="display: flex; align-items: center; position: relative">
+                            <input type="password" class="form-control form-control-lg" name="txtRepass"
+                                placeholder="Retype Password" required/>
+<!--                            <div class="input-group-addon" style="position: absolute; right:2%; padding-left: 20px">
+                                <a href=""><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+                            </div>-->
+                        </div>
+                        <div class="form-outline mb-4" id="show_hide_password" style="display: flex; align-items: center; position: relative">
+                            <input type="number" class="form-control form-control-lg" name="txtPhone"
+                                placeholder="Phone" required/>
+<!--                            <div class="input-group-addon" style="position: absolute; right:2%; padding-left: 20px">
+                                <a href=""><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+                            </div>-->
+                        </div>
+                        <div class="form-outline mb-4" id="show_hide_password" style="display: flex; align-items: center; position: relative">
+                            <input type="date" class="form-control form-control-lg" name="txtBirth"
+                                placeholder="Date of birth" required/>
+<!--                            <div class="input-group-addon" style="position: absolute; right:2%; padding-left: 20px">
+                                <a href=""><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+                            </div>-->
+                        </div>
+                        <a href="admin_login.jsp" style="text-decoration: none;">Login</a>
+                        <br><input type="submit" value="Regist" class="btn btn-primary btn-lg btn-block" style="margin-top: 12px;">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="footer">
+        <div class="icon">
+            <a href="https://www.facebook.com/profile.php?id=80052907769357"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a>
+            <a href="https://twitter.com/?lang=vi"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.flickr.com/"><i class="fa-brands fa-flickr"></i></a>
+            <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <p>Powered by: Nguyen Duc</p>
+    </div>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+    integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+  'use strict'
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()
+
+//$(document).ready(function() {
+//    $("#show_hide_password a").on('click', function(event) {
+//        event.preventDefault();
+//        if($('#show_hide_password input').attr("type") == "text"){
+//            $('#show_hide_password input').attr('type', 'password');
+//            $('#show_hide_password i').addClass( "fa-eye-slash" );
+//            $('#show_hide_password i').removeClass( "fa-eye" );
+//        }else if($('#show_hide_password input').attr("type") == "password"){
+//            $('#show_hide_password input').attr('type', 'text');
+//            $('#show_hide_password i').removeClass( "fa-eye-slash" );
+//            $('#show_hide_password i').addClass( "fa-eye" );
+//        }
+//    });
+//});
+</script>
+
+</html>

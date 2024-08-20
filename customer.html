@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css
+    " />
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="customer.css" />
+    <title>AppleShop</title>
+    <link rel="shortcut icon"
+        href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABO0lEQVR4Ae3WgUdDURTH8WcLIRFAVUoKAjVQEVMogYBCESIqTIQIQR4CgQwM+hsiUjxUMkQUkSEShTyYWL++eMgU3HN7g+EDDny57nECSQ315yAMQxc9KGC8fpZGwDweIaymHbAC/TCSZsAQYihxjkyaAQdQIsYogjQDriCUkUPwXwFtyGESAwgSc8gji17MYBbDvgJasIMKlKjiDMsYxCIu8AklarjEtCWgHSeQQQ3rrgElyIPQJWAC8mDP9QmOIKMysq4BN5DRluUXPENGU5aAV8gobwl4gow2LAERZBRZAoqQBwXXgAXIgy/sugR04AXyoOq6ig8hD95dA/rxARmV3AKAbcjgDX2WgAxOIUdLPi6iTtxBdWLcowL9Yt/nSdaFYzwgwia6kUUrxlDELa6xZjrJ0tIMaAZ8A6GRaKMmbbcuAAAAAElFTkSuQmCC"
+        type="image/x-icon">
+</head>
+
+<body>
+    <div class="position-sticky top-0 left-0 z-3" style="display: flex; justify-content: center; background-color: #515154; ">
+        <div class="header">
+            <div class="logo">
+                <img src="./image/0000242_Logos Desktop.png" alt="" />
+            </div>
+            <div class="menu">
+                <a href="#iphone">iPhone</a>
+                <a href="#ipad">iPad</a>
+                <a href="#mac">Mac</a>
+                <a href="#watch">Watch</a>
+                <a href="#listen">Sounds</a>
+                <a href="#phukien">Accessories</a>
+                <a href="./admin_login.html">Staff</a>
+                <a href="https://shopdunk.com/tra-gop">News</a>
+                <a href="https://shopdunk.com/khuyen-mai">Discount</a>
+            </div>
+            <div class="icon">
+                <a href=""><i class="fa-solid fa-magnifying-glass glasses"></i></a>
+                <a href=""><i class="fa-solid fa-bag-shopping bags"></i></a>
+                <a href=""><i class="fa-solid fa-user-large users"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="links">
+        <a href="./index.html">Home</a>
+        <p style="margin-left: 8px;"> > </p>
+        <a href="./nhanvien.html" style="margin-left: 8px;">Staff</a>
+    </div>
+    <div class="tieu-de">
+        <h3>All support staff</h3>
+    </div>
+    <div class="table">
+        <form style="margin-left: 160px">
+            <input type="text" id="searchValue" placeholder="Tìm kiếm nhân viên...">
+            <input type="button" value="Search" id="searchButton" onclick="search()">
+        </form>
+        <table class="display" border="1" id="myTable" style="margin-left: 160px">
+            <tr>
+                <th style="padding-left: 5px;">No</th>
+                <th style="padding-left: 8px;">Name</th>
+                <th style="padding-left: 8px;">Possition</th>
+                <th style="padding-left: 8px;">Office</th>
+                <th style="padding-left: 8px;">Phone</th>
+                <th style="padding-left: 8px;">Start date</th>
+                <th style="padding-left: 22px;">Copy</th>
+            </tr>
+        </table>
+    </div>
+    <p style="color:red; font-size: 20px; font-weight: 700; margin-left: 160px;" id="err_name"></p>
+    <div class="regist">
+        <h4 class="tittle">Đăng kí nhận tin từ ShopDunk</h4>
+        <p>Thông tin sản phẩm mới nhất và chương trình khuyến mãi</p>
+        <form class="row z-3 needs-validation">
+            <input type="email" class="form-control" id="inputEmail" placeholder="Email của bạn">
+            <input type="button" id="registBtn" value="Submit" onclick="checkregist()">
+            <p style="color:red; margin-top: 8px;" id="err_email"></p>
+        </form>
+    </div>
+    <div class="footer">
+        <div class="icon">
+            <a href="https://www.facebook.com/profile.php?id=80052907769357"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a>
+            <a href="https://twitter.com/?lang=vi"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.flickr.com/"><i class="fa-brands fa-flickr"></i></a>
+            <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <p>Powered by: Nguyen Duc</p>
+    </div>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+    integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./customer.js">
+
+</script>
+
+</html>
